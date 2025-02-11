@@ -12,6 +12,10 @@
       <email>alberto.kawai@gmail.com</email>
       <uri>http://www.mendeley.com/profiles/alberto-kawai/</uri>
     </author>
+    <contributor>
+      <name>Eudes Santos Silva</name>
+      <uri/>
+    </contributor>
     <category citation-format="author-date"/>
     <category field="medicine"/>
     <summary>The Brazilian Standard Style in accordance with ABNT-NBR 10520.2002 and ABNT-NBR 6023.2002</summary>
@@ -47,7 +51,7 @@
     </terms>
   </locale>
   <macro name="access">
-    <text variable="URL" prefix="Disponível em: &lt;" suffix="&gt;."/>
+    <text variable="URL" prefix="Disponível em: " suffix="."/>
     <date variable="accessed" prefix=". Acesso em: " suffix=".">
       <date-part name="day" suffix=" "/>
       <date-part name="month" form="short" suffix=". " text-case="lowercase"/>
@@ -69,12 +73,12 @@
     </names>
   </macro>
   <macro name="author-short">
-    <names variable="author">
+    <names variable="author" font-variant="normal">
       <name form="short" name-as-sort-order="all" sort-separator=", " initialize-with=". " delimiter="; " delimiter-precedes-last="never">
-        <name-part name="family" text-case="uppercase"/>
-        <name-part name="given" text-case="uppercase"/>
+        <name-part name="family" text-case="capitalize-first"/>
+        <name-part name="given" text-case="capitalize-first"/>
       </name>
-      <et-al font-style="italic"/>
+      <et-al font-style="italic" font-weight="normal" text-decoration="none"/>
       <substitute>
         <names variable="editor"/>
         <names variable="translator"/>
